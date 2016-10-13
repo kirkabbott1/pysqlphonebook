@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+  <body>
+    <h1>{{title}}</h1>
+    <ul>
+      {% for phonebook in phonebook_list %}
+      <li><a href="/update_phonebook?id={{phonebook.id}}">{{phonebook.name}}</a></li>
+        <ul>
+          <li><a href="/update_phonebook?id={{phonebook.id}}">{{phonebook.phone_number}}</a></li>
+          <li><a href="/update_phonebook?id={{phonebook.id}}">{{phonebook.email}}</a></li>
+        </ul>
+      {% endfor %}
+    </ul>
+    <div class="Set_entry">
+      <li><a href="/new_entry">Set New Entry</a></li>
+    </div>
+  </body>
+</html>
+{% endblock %}

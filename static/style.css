@@ -1,0 +1,92 @@
+body            {
+  font-family: sans-serif;
+  background: #eee;
+  margin: 0;
+}
+a, h1, h2       {
+  color: rgb(108, 161, 83);
+  text-decoration: none;
+}
+.home {
+  float: left;
+  margin-top: .8%;
+  margin-left: .8%;
+  height: 40px;
+}
+h1, h2 {
+  font-family: 'Georgia', serif;
+}
+header {
+  background-color: #555;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 28px;
+}
+nav a {
+  transition: .3s;
+}
+nav a:nth-child(2) {
+  margin-right: 20px;
+}
+nav a:last-child {
+  margin-left: 20px;
+}
+nav a:hover {
+  color: white;
+  /*text-decoration: underline;*/
+  transition: .3s;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+/*.nav ul {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  list-style: none;
+  margin: 10px;
+}*/
+.page {
+  margin: 2em auto;
+  width: 35em;
+  border: 5px solid #ccc;
+  padding: 0.8em;
+  background: white;
+}
+.entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.entries li {
+  margin: 0.8em 1.2em;
+}
+.set_entry {
+  font-size: 0.9em;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+Inherited from header.nav
+Style Attribute {
+    background-color: #555;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 28px;
+    /* text-decoration: none; */
+}
+Inherited from body
+body {
+    font-family: sans-serif;
+    background: #eee;
+}
